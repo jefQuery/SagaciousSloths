@@ -5,11 +5,35 @@
 
 .profilePic {
 	background-color: #40b1f6;
-	padding: 50px;
-	width: 100px;
-	height: 100px;
+	padding: 25px;
+	width: relative;
+	height: 200px;
 	border-radius: 20px;
 	text-align: center;
+}
+
+.cohortButton {
+  margin-right: 10px;
+  background-color: #40b1f6;
+  padding: 25px;
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  box-shadow: 0 5px #b2b2b2;
+  font-size: 20px;
+}
+
+.cohortButton:hover {background-color: #515151}
+
+.cohortButton:active {
+  background-color: #515151;
+  box-shadow: 0 5px #b2b2b2;
+  transform: translateY(4px);
 }
 
 .readyButton {
