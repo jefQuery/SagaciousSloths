@@ -28,7 +28,6 @@ module.exports = {
       if (err) {
         return console.error(err);
       }
-      console.log('findOne results', userDoc);
       callback(userDoc);
     });
   },
@@ -44,7 +43,7 @@ module.exports = {
     });
   }
 };
-let callback = (result) => console.log(result);
+// let callback = (result) => console.log(result);
 // module.exports.resetModel((result) => result);
 // module.exports.addUser({username: 'JG', password: 'bluejay'}, callback);
-module.exports.findOne('Jeff', callback);
+// module.exports.findOne('Jeff', callback);
