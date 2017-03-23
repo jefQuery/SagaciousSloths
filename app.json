@@ -1,6 +1,7 @@
 {
   "name": "SagaciousSloths",
   "scripts": {
+    "test": "grunt test"
   },
   "env": {
     "MONGODB_URI": {

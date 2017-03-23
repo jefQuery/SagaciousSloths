@@ -60,8 +60,12 @@ describe('quiz GET', function() {
   });
 
   it('should send an array containing objects', function(done) {
+    request('http://127.0.0.1:' + port + '/dashboard', function(error, response, body) {
+      done();
+    });
     request('http://127.0.0.1:' + port + '/quiz', function(error, response, body) {
       var parsedBody = JSON.parse(body);
+      console.log('THE BODY', parsedBody);
       expect(parsedBody).to.be.an('array');
       expect(parsedBody[0]).to.be.an('object');
       done();
